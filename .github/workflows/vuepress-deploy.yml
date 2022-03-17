@@ -10,7 +10,7 @@ jobs:
     - name: vuepress-deploy
       uses: jenkey2011/vuepress-deploy@master
       env:
-        ACCESS_TOKEN: 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
+        ACCESS_TOKEN: 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
         TARGET_REPO: okanne/git_case
         TARGET_BRANCH: master
         BUILD_SCRIPT: yarn && yarn build
