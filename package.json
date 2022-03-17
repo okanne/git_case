@@ -1,0 +1,23 @@
+{
+  "name": "git_case",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okanne/git_case.git"
+  },
+  "author": "sunwei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/okanne/git_case/issues"
+  },
+  "homepage": "https://github.com/okanne/git_case#readme",
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  }
+}
