@@ -1,0 +1,21 @@
+name: Build and Deploy
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: vuepress-deploy
+      uses: jenkey2011/vuepress-deploy@master
+      env:
+        ACCESS_TOKEN: b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACChYzJJSq/6UKETDl9Fje95omOa/qAbHc6lbBB9m2pPKwAAAJiP7DuHj+w7
+hwAAAAtzc2gtZWQyNTUxOQAAACChYzJJSq/6UKETDl9Fje95omOa/qAbHc6lbBB9m2pPKw
+AAAEALS3GGK2rDJrMCdcj5oetdz5k0xgACxwRi9OXXOJEhmaFjMklKr/pQoRMOX0WN73mi
+Y5r+oBsdzqVsEH2bak8rAAAAEDI4MDg0MTgwNEBxcS5jb20BAgMEBQ==
+        TARGET_REPO: okanne/git_case
+        TARGET_BRANCH: master
+        BUILD_SCRIPT: yarn && yarn build
+        BUILD_DIR: git-case/.vuepress/dist/
